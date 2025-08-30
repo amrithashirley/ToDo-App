@@ -1,0 +1,25 @@
+/* Import Gilroy (Google doesn’t host it, so pretend via local fallback */
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy"), url("https://fonts.cdnfonts.com/s/59109/Gilroy-Regular.woff") format("woff");
+  }
+  
+  .font-gilroy {
+    font-family: "Gilroy", sans-serif;
+  }
+  
+  /* lil imperfections */
+  button {
+    letter-spacing: 0.3px; /* feels less mechanical */
+  }
+  
+  #taskInput::placeholder {
+    font-style: italic;
+    color: #d16b91;
+  }
+  
+  /* quirky hover */
+  li:hover {
+    transform: translateX(2px);
+    transition: 0.1s;
+  }

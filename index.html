@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-50 font-gilroy min-h-screen flex flex-col items-center py-10">
+
+  <h1 class="text-4xl font-bold text-pink-600 mb-6">To-Do List</h1>
+
+  <!-- Input -->
+  <div class="flex gap-2 mb-8">
+    <input 
+      id="taskInput"
+      type="text"
+      placeholder="Enter task:"
+      class="border border-pink-300 rounded-xl px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-pink-400"
+    >
+    <button 
+      id="addTaskBtn"
+      class="bg-pink-500 text-white px-4 py-2 rounded-xl hover:bg-pink-600 transition"
+    >
+      Add
+    </button>
+  </div>
+
+  <!-- Current Tasks -->
+  <div class="w-full max-w-md mb-6">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">Current Tasks:</h2>
+    <ul id="currentTasks" class="space-y-3 p-3 bg-white rounded-xl shadow"></ul>
+  </div>
+
+  <!-- Completed Tasks -->
+  <div class="w-full max-w-md">
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">Completed Tasks:</h2>
+    <ul id="completedTasks" class="space-y-3 p-3 bg-white rounded-xl shadow text-gray-500 italic">
+      <li id="noCompleted">Oops… you haven’t completed anything yet</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
